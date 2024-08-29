@@ -1,0 +1,33 @@
+﻿.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.radio-box label{
+    margin-right: 8px
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+    .input-box input{
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid gray
+    }
+
+button{
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: #fff;
+    transition: background 0.3s
+}
+
+    button:hover {
+        background: #eee;
+        transition: background 0.3s
+    }

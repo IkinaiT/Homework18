@@ -1,0 +1,124 @@
+﻿@model AnimalsViewModel
+
+@{
+    ViewData["Title"] = "Animals";
+    var animals = Model;
+}
+
+<div class="main-wrapper">
+    <div class="table-box">
+        <h3>Млекопитающие</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Домен</th>
+                    <th>Царство</th>
+                    <th>Тип</th>
+                    <th>Отряд</th>
+                    <th>Семейство</th>
+                    <th>Род</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var item in animals.Mammals)
+                    {
+                    <tr>
+                        <td>@item.Domain</td>
+                        <td>@item.Kingdom</td>
+                        <td>@item.Type</td>
+                        <td>@item.Squad</td>
+                        <td>@item.Family</td>
+                        <td>@item.Genus</td>
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-box">
+        <h3>Птицы</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Домен</th>
+                    <th>Царство</th>
+                    <th>Тип</th>
+                    <th>Отряд</th>
+                    <th>Семейство</th>
+                    <th>Род</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var item in animals.Birds)
+                    {
+                        <tr>
+                            <td>@item.Domain</td>
+                            <td>@item.Kingdom</td>
+                            <td>@item.Type</td>
+                            <td>@item.Squad</td>
+                            <td>@item.Family</td>
+                            <td>@item.Genus</td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+    <div class="table-box">
+        <h3>Земноводные</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Домен</th>
+                    <th>Царство</th>
+                    <th>Тип</th>
+                    <th>Отряд</th>
+                    <th>Семейство</th>
+                    <th>Род</th>
+                </tr>
+            </thead>
+            <tbody>
+                    @foreach (var item in animals.Amphibians)
+                    {
+                        <tr>
+                            <td>@item.Domain</td>
+                            <td>@item.Kingdom</td>
+                            <td>@item.Type</td>
+                            <td>@item.Squad</td>
+                            <td>@item.Family</td>
+                            <td>@item.Genus</td>
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+    <div class="table-box">
+        <h3>Не классифицированы</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Домен</th>
+                    <th scope="col">Царство</th>
+                    <th scope="col">Тип</th>
+                    <th scope="col">Отряд</th>
+                    <th scope="col">Семейство</th>
+                    <th scope="col">Род</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in animals.Unknowns)
+                {
+                    <tr>
+                        <td>@item.Domain</td>
+                        <td>@item.Kingdom</td>
+                        <td>@item.Type</td>
+                        <td>@item.Squad</td>
+                        <td>@item.Family</td>
+                        <td>@item.Genus</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <a class="href-button" href="Animals/Create">Добавить</a>
+</div>

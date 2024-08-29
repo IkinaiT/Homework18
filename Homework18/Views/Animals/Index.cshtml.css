@@ -1,0 +1,47 @@
+﻿.main-wrapper{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.table-box{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 12px;
+    height: max-content;
+    max-height: 400px;
+    overflow: auto
+}
+
+    .table-box h3{
+        text-decoration: underline
+    }
+
+th, td{
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd){
+    background: #eee
+}
+
+.href-button {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    width: min-content;
+    padding: 12px 32px;
+    border-radius: 12px;
+    transition: background 0.3s
+}
+
+    .href-button:hover{
+        background: #ddd;
+        transition: background 0.3s
+    }
