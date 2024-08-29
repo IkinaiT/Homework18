@@ -1,5 +1,4 @@
 ﻿using Homework18.DataBase;
-using Homework18.Models.Interfaces.Animals;
 using Homework18.Models.Runtime.Animals;
 using Homework18.Models.Runtime.ClientModels;
 
